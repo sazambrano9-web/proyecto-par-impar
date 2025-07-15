@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Par-Impar</title>
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <!-- Componente para introducir rango -->
-  <input-range></input-range>
 
-    <!-- Componente para mostrar la lista -->
-  <par-impar-lista></par-impar-lista>
+    <!-- Contenedor principal de la aplicación -->
+  <div class="app-container">
+    <header class="cabecera">
+      <h1>Verificador Par‑Impar</h1>
+      <p>Ingresa un rango y descubre si cada número es par o impar</p>
+    </header>
+    <main class="contenido-principal">
+      <!-- Componente para introducir rango -->
+     <div class="input-container">
+        <input-range></input-range>
+      </div>
+
+      <!-- Componente para mostrar la lista -->
+      <div class="lista-container">
+        <par-impar-lista></par-impar-lista>
+      </div>
+    </main>
+  </div>
 
   <!-- Carga de los módulos JS -->
   <script type="module" src="./components/input-range.js"></script>
