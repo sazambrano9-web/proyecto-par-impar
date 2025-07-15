@@ -1,0 +1,47 @@
+Objetivo general:
+
+Desarrollar una aplicación web interactiva que permita al usuario ingresar un rango de números y visualizar una lista indicando si cada número es par o impar, aplicando conceptos de programación modular, componentes reutilizables y el uso de Custom Elements (Web Components) en JavaScript moderno.
+
+Requisitos funcionales y técnicos:
+
+Implementar dos componentes personalizados (Custom Elements):
+Un componente para capturar el rango numérico (input-range).
+Un componente para mostrar los resultados (par-impar-lista).
+Usar el ciclo de vida de los Web Components:
+constructor() para inicializar y crear el Shadow DOM.
+connectedCallback() para insertar contenido y manejar eventos.
+Utilizar Shadow DOM para encapsular estilos y lógica en cada componente.
+Establecer la comunicación entre los componentes mediante eventos personalizados (CustomEvent), sin acoplamiento directo entre ellos.
+Validar que los valores ingresados sean numéricos y que el número inicial sea menor o igual al final.
+Mostrar en pantalla una lista de números, indicando si cada uno es par o impar.
+Estructura de archivos sugerida:
+
+
+
+Descripción de los componentes:
+
+input-range:
+
+Contiene dos campos numéricos: inicio y fin del rango.
+Incluye un botón para enviar los datos.
+Al hacer clic, dispara un evento personalizado llamado rango-seleccionado, enviando los valores del rango al componente de lista.
+par-impar-lista:
+
+Escucha el evento rango-seleccionado.
+Procesa los datos recibidos y muestra una lista con los números del rango, indicando si cada uno es par o impar.
+Usa el Shadow DOM para encapsular el contenido y estilos.
+Ejemplo esperado en la interfaz:
+
+Si el usuario ingresa:
+
+Inicio: 4
+Fin: 7
+El componente mostrará:
+
+4 - Par 
+
+5 - Impar 
+
+6 - Par 
+
+7 - Impar
