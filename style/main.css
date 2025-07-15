@@ -94,7 +94,14 @@ input-range .mensaje-error {
   margin-top: 4px;
 }
 
-
+.pie-pagina {
+  text-align: center;
+  padding: 12px;
+  font-size: 0.85rem;
+  color: #666;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+}
 
 
 
